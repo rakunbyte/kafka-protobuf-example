@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kafka-producer", "kafka-producer\kafka-producer.csproj", "{D909766B-8C4C-482A-B5CA-5B8C3F6BB578}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{52613E7F-EF8C-437B-B967-872F1216D1FD}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "protobufs", "protobufs\protobufs.csproj", "{F221FA61-2C2E-4A86-BF65-5A3B868CD625}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,9 @@ Global
 		{D909766B-8C4C-482A-B5CA-5B8C3F6BB578}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D909766B-8C4C-482A-B5CA-5B8C3F6BB578}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D909766B-8C4C-482A-B5CA-5B8C3F6BB578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F221FA61-2C2E-4A86-BF65-5A3B868CD625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F221FA61-2C2E-4A86-BF65-5A3B868CD625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F221FA61-2C2E-4A86-BF65-5A3B868CD625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F221FA61-2C2E-4A86-BF65-5A3B868CD625}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
