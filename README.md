@@ -16,9 +16,15 @@ message SimpleMessage {
 You'll see a copy of this in the project `protobufs` folder.
 
 At this point we'll have a couple options
-* We can use [protobuf-net](https://github.com/protobuf-net/protobuf-net)
-* We'd have to use the website https://protogen.marcgravell.com/ to generate the C# code
-* Or we could use the `protogen` tool
-* `dotnet tool run protogen **/*.proto --csharp_out=.`
+* (Not implemented) We can use [protobuf-net](https://github.com/protobuf-net/protobuf-net)
+  * We'd have to use the website https://protogen.marcgravell.com/ to generate the C# code
+  * Or we could use the `protogen` tool
+  * `dotnet tool run protogen **/*.proto --csharp_out=.`
 
-Alternative is use protoc, but its uglier
+* We can use `Google.Protobuf`
+  * Install the nuget `Google.Protobuf`
+  * At this point you can install `protoc` locally and manually transform proto to .cs
+  * Or you can install the nuget `Google.Protobuf.Tools` and set it to transform on build
+
+Implemented is `Google.Protobuf` and `Google.Protobuf.Tools`
+
