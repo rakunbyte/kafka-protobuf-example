@@ -13,7 +13,7 @@ message SimpleMessage {
   string date_time = 2;
 }
 ```
-You'll see a copy of this in the project `protobufs` in the `proto` folder.
+You'll see a copy of this in the project `protobufs` folder.
 
 At this point we'll have a couple options
 * We can use [protobuf-net](https://github.com/protobuf-net/protobuf-net)
