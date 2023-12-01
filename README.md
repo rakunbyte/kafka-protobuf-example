@@ -20,3 +20,5 @@ At this point we'll have a couple options
 * We'd have to use the website https://protogen.marcgravell.com/ to generate the C# code
 * Or we could use the `protogen` tool
 * `dotnet tool run protogen **/*.proto --csharp_out=.`
+
+Alternative is use protoc, but its uglier
