@@ -18,4 +18,5 @@ You'll see a copy of this in the project `protobufs` in the `proto` folder.
 At this point we'll have a couple options
 * We can use [protobuf-net](https://github.com/protobuf-net/protobuf-net)
 * We'd have to use the website https://protogen.marcgravell.com/ to generate the C# code
-* 
+* Or we could use the `protogen` tool
+* `dotnet tool run protogen **/*.proto --csharp_out=.`
