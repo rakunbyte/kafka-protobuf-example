@@ -1,8 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Com.Github.Rakunbyte;
+﻿using Com.Github.Rakunbyte;
 using Confluent.Kafka;
-using Confluent.Kafka.SyncOverAsync;
 using Confluent.SchemaRegistry.Serdes;
 
 var consumerConfig = new ConsumerConfig
@@ -12,7 +9,7 @@ var consumerConfig = new ConsumerConfig
 };
 
 
-CancellationTokenSource cts = new CancellationTokenSource();
+var cts = new CancellationTokenSource();
 /* IF YOU WANT TO DESERIALIZE DIRECTLY FROM KAFKA
     using (var consumer =
            new ConsumerBuilder<string, SimpleMessage>(consumerConfig)
@@ -20,6 +17,8 @@ CancellationTokenSource cts = new CancellationTokenSource();
                .SetErrorHandler((_, e) => Console.WriteLine($"Error: {e.Reason}"))
                .Build())
 */
+
+//If you want to pass in the Deserializer
 var xxx = new ProtobufDeserializer<SimpleMessage>();
 
 using (var consumer =
